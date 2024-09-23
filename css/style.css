@@ -9,7 +9,7 @@
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #ffffff;
-    background-color: #1e1e1e;
+    background: linear-gradient(180deg, #1e1e1e, #2e2e2e);
   }
   
   /* Scrollbar Styles */
@@ -130,11 +130,13 @@
     border-radius: 8px;
     margin-bottom: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transform-style: preserve-3d;
     transition: transform 0.3s;
   }
   
   .card:hover {
-    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.5);
+    transform: rotateY(10deg) translateY(-10px);
   }
   
   /* Cards Container */
@@ -142,6 +144,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    perspective: 1000px;
   }
   
   .cards-container .card {

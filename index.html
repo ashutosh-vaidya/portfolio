@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Ashutosh Vaidya | Portfolio</title>
+  <meta charset="UTF-8">  
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashutosh Vaidya | Portfolio</title>
   <link rel="stylesheet" href="css/style.css">
-  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
 </head>
-<body>
 
-  <!-- Left Fixed Menu -->
+<body>
+  <!-- Left panel Menu and toggle button for mobile -->
+  <button class="menu-toggle" aria-label="Toggle Menu">
+    <i class="fas fa-bars"></i>
+  </button>
+
   <aside class="sidebar">
     <div class="profile">
       <img src="images/profile.jpg" alt="profile photo">
       <h2>Ashutosh Vaidya</h2>
     </div>
+
     <nav class="nav-menu">
       <ul>
         <li><a href="#hero"><i class="fas fa-home"></i> Home</a></li>
@@ -26,7 +31,6 @@
         <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
         <li><a href="#blog"><i class="fas fa-blog"></i> Blog</a></li>
         <li><a href="#contact"><i class="fas fa-envelope"></i> Contact Me</a></li>
-        <li><a href="#download" target="_blank"><i class="fas fa-download"></i> Download Resume</a></li>
       </ul>
     </nav>
   </aside>
@@ -36,8 +40,11 @@
     <!-- Hero Section -->
     <section id="hero" class="section hero-section">
       <div class="section-content">
-        <h1>Welcome to My Portfolio</h1>
-        <p>A brief introduction about me.</p>
+        <h1>Hello, I'm Ashutosh Vaidya.</h1>
+        <p>I'm a passionate software developer specializing in building robust web applications.</p>
+        <a href="your-resume.pdf" class="btn download-resume-hero" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-download"></i> Download Resume
+        </a>
       </div>
     </section>
 
@@ -46,66 +53,68 @@
       <div class="section-content">
         <h2>About Me</h2>
         <div class="card">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor, sapien id facilisis aliquam, lorem elit cursus ante, at convallis quam odio id nunc. Sed nec urna vitae urna feugiat auctor a vitae velit. Mauris accumsan, lacus in sodales dictum, sapien nibh porttitor urna, at ultrices lacus elit nec dolor.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce auctor, sapien id facilisis aliquam, lorem
+            elit cursus ante, at convallis quam odio id nunc. Sed nec urna vitae urna feugiat auctor a vitae velit.
+            Mauris accumsan, lacus in sodales dictum, sapien nibh porttitor urna, at ultrices lacus elit nec dolor.</p>
         </div>
       </div>
     </section>
 
     <!-- My Skills Section -->
-<section id="skills" class="section skills-section">
-    <div class="section-content">
-      <h2>My Skills</h2>
-      <div class="skills-grid">
-        <!-- Skill Card -->
-        <div class="skill-card">
-          <i class="fab fa-html5"></i>
-          <span>HTML5</span>
+    <section id="skills" class="section skills-section">
+      <div class="section-content">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+          <!-- Skill Card -->
+          <div class="skill-card">
+            <i class="fab fa-html5"></i>
+            <span>HTML5</span>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-css3-alt"></i>
+            <span>CSS3</span>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-js-square"></i>
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-angular"></i>
+            <span>Angular</span>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-react"></i>
+            <span>TypeScript</span>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-python"></i>
+            <span>Python</span>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-code"></i>
+            <span>C</span>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-code"></i>
+            <span>C++</span>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-code"></i>
+            <span>C#</span>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-git-alt"></i>
+            <span>Git</span>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-flask"></i>
+            <span>Postman</span>
+          </div>
+          <!-- Add more skills as needed -->
         </div>
-        <div class="skill-card">
-          <i class="fab fa-css3-alt"></i>
-          <span>CSS3</span>
-        </div>
-        <div class="skill-card">
-          <i class="fab fa-js-square"></i>
-          <span>JavaScript</span>
-        </div>
-        <div class="skill-card">
-          <i class="fab fa-angular"></i>
-          <span>Angular</span>
-        </div>
-        <div class="skill-card">
-          <i class="fab fa-react"></i>
-          <span>TypeScript</span>
-        </div>
-        <div class="skill-card">
-          <i class="fab fa-python"></i>
-          <span>Python</span>
-        </div>
-        <div class="skill-card">
-          <i class="fas fa-code"></i>
-          <span>C</span>
-        </div>
-        <div class="skill-card">
-          <i class="fas fa-code"></i>
-          <span>C++</span>
-        </div>
-        <div class="skill-card">
-          <i class="fas fa-code"></i>
-          <span>C#</span>
-        </div>
-        <div class="skill-card">
-          <i class="fab fa-git-alt"></i>
-          <span>Git</span>
-        </div>
-        <div class="skill-card">
-          <i class="fas fa-flask"></i>
-          <span>Postman</span>
-        </div>
-        <!-- Add more skills as needed -->
       </div>
-    </div>
-  </section>
-  
+    </section>
+
 
     <!-- Experience Section -->
     <section id="experience" class="section experience-section">
@@ -116,13 +125,15 @@
           <div class="card">
             <h3>Senior Developer</h3>
             <p>ABC Company | Jan 2018 - Present</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at venenatis justo, sed fringilla tortor.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at venenatis justo, sed fringilla
+              tortor.</p>
           </div>
           <!-- Experience Card -->
           <div class="card">
             <h3>Junior Developer</h3>
             <p>XYZ Company | Jun 2015 - Dec 2017</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam convallis, nulla eu sagittis dictum, magna nisl fermentum massa, vitae facilisis enim purus a nunc.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam convallis, nulla eu sagittis dictum, magna
+              nisl fermentum massa, vitae facilisis enim purus a nunc.</p>
           </div>
           <!-- Add more experience cards as needed -->
         </div>
@@ -144,7 +155,8 @@
           <div class="card">
             <h3>High School Diploma</h3>
             <p>Some High School | 2007 - 2011</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut metus ac mauris venenatis condimentum.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut metus ac mauris venenatis
+              condimentum.</p>
           </div>
           <!-- Add more education cards as needed -->
         </div>
@@ -159,12 +171,14 @@
           <!-- Project Card -->
           <div class="card">
             <h3>Project One</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae nisi a erat efficitur gravida.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae nisi a erat efficitur gravida.
+            </p>
           </div>
           <!-- Project Card -->
           <div class="card">
             <h3>Project Two</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod, orci ac tincidunt ullamcorper, lectus justo maximus purus, vel tempor turpis neque at nunc.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur euismod, orci ac tincidunt
+              ullamcorper, lectus justo maximus purus, vel tempor turpis neque at nunc.</p>
           </div>
           <!-- Add more project cards as needed -->
         </div>
@@ -184,7 +198,8 @@
           <!-- Blog Post Card -->
           <div class="card">
             <h3>Blog Post Two</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ligula quis sapien condimentum aliquet.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id ligula quis sapien condimentum aliquet.
+            </p>
           </div>
           <!-- Add more blog cards as needed -->
         </div>
@@ -208,18 +223,20 @@
   </main>
 
   <!-- Footer -->
-<footer class="footer">
-  <div class="container">
-    <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
-    <div class="social-links">
-      <a href="https://linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://twitter.com/your-handle" target="_blank"><i class="fab fa-twitter"></i></a>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Your Name. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/your-username" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://twitter.com/your-handle" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="your-resume.pdf" class="btn-icon" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i></a>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
   <!-- JavaScript -->
   <script src="js/script.js"></script>
 </body>
+
 </html>

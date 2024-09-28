@@ -1,3 +1,28 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const sidebar = document.querySelector('.sidebar');
+  const navLinks = document.querySelectorAll('.nav-menu a');
+
+   // Toggle sidebar on menu button click
+   menuToggle.addEventListener('click', () => {
+    sidebar.classList.toggle('active');
+  });
+
+  // Close sidebar on clicking a menu link
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      sidebar.classList.remove('active');
+    });
+  });
+
+  // Close sidebar when clicking outside of it
+  document.addEventListener('click', (e) => {
+    if (!sidebar.contains(e.target) && !menuToggle.contains(e.target)) {
+      sidebar.classList.remove('active');
+    }
+  });
+});
+
 // Smooth Scrolling
 const navLinks = document.querySelectorAll('.nav-menu a');
 
